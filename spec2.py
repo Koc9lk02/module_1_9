@@ -9,11 +9,3 @@ for i in range(1,one_tablet):
     for j in range(1,i):
         if one_tablet%(i+j)==0 :
             print(i,j)
-
-
-
-#if one_tablet % n = 0:
-#    print (n)
-
-
-
