@@ -6,12 +6,12 @@ def calculate_structure_sum(data):
         return  len(data)
     elif isinstance(data, (list, set, tuple)):
         for item in data:
-            total_summ += calculate_structure_sum(item)
+            total_summ+= calculate_structure_sum(item)
     elif isinstance(data, dict):
         for key, value in data.items():
             total_summ+= calculate_structure_sum(key)
-            total_summ += calculate_structure_sum(value)
-
+            total_summ+= calculate_structure_sum(value)
+    return total_summ
 
 if __name__== '__main__':
     data_structure = [
